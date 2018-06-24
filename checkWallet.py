@@ -14,15 +14,15 @@ def checkBalance():
 		if(balance[0]/1000000000 < 1):
 			if(balance[0]/1000000 < 1):
 				if(balance[0]/1000 < 1):
-					res = str(balance[0]) + " iota"
+					res = str('%.2f' % (balance[0])) + " iota"
 				else:
-					res = str(balance[0]/1000) + " Kiota"
+					res = str('%.2f' % (balance[0]/1000)) + " [K]iota"
 			else:
-				res = str(balance[0]/1000000) + " Miota"
+				res = str('%.2f' % (balance[0]/1000000)) + " [M]iota"
 		else:
-			res = str(balance[0]/1000000000) + " Giota"
+			res = str('%.2f' % (balance[0]/1000000000)) + " [G]iota"
 	else:
-		res = str(balance[0]/1000000000000) + " Tiota"
+		res = str('%.2f' % (balance[0]/1000000000000)) + " [T]iota"
 	return (res)
 
 print("Actual Balance: " + str(checkBalance()))
