@@ -1,5 +1,7 @@
-# Tiny Python Script that lets you check your IOTA wallet balance.
-A first project using ```iota.lib.py``` APIs.
+# IOTA-CheckMyWallet 
+
+Tiny Python Script that lets you check your IOTA wallet balance.
+(A first project using ```iota.lib.py``` APIs.)
 
 ## Usage:
 ```
